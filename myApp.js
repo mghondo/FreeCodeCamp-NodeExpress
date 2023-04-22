@@ -5,6 +5,10 @@ console.log("Hello World");
 
 module.exports = app;
 
+// app.get("/", function(req, res) {
+//   res.send("Hello Express");
+// });
+
 app.get("/", function (req, res) {
-  res.send("Hello Express");
+  res.sendFile(__dirname + "/views/index.html");
 });
